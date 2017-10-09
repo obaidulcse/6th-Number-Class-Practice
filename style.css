@@ -1,0 +1,97 @@
+*{
+    margin: 0;padding: 0;
+}
+@font-face{
+    font-family: 'heli-copta';
+    src:url(../fonts/helicopta.otf);
+}
+.main_menu{
+    min-height: 70px;
+    background-color: crimson;
+    width: 1080px;
+    margin: 8px auto; 
+    
+}
+.main_menu ul{
+    list-style: none;
+}
+.main_menu ul li{
+    float: left;
+    border-right: 1px solid white;
+    position: relative;    
+}
+.main_menu ul li:last-child{
+    border-right: none;
+}
+.main_menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px ;
+    font-weight: bold;
+    display: block;
+    padding: 24px 53px;
+    transition: 2s;
+}
+.main_menu ul li a:hover{
+    background-color:darkred;
+    transform:rotate(360deg) scale(1.025);
+}
+.main_menu ul li ul{
+    background-color: crimson;
+    position: absolute;
+    top: -9999px;
+    transition: 1.5s;
+}
+.main_menu ul li:hover ul{
+    top: 70px;
+}
+.main_menu ul li ul li{
+    border-right: none;
+    border-bottom: 1px solid white;
+}
+.main_menu ul li ul li:last-child{
+    border-bottom: none;
+}
+.main_menu ul li ul li a{
+    width: 75px;
+    padding: 20px 30px;
+}
+.main_menu ul li ul li a:hover{}
+
+.single_image{
+    border: 1px solid black;
+    padding: 30px 20px;
+    margin: 40px 55px;;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+}
+.single_image .image{
+    width: 300px;
+    margin: 0 auto;
+}
+.single_image .image img{
+    height: 200px;
+    width: 300px;
+    opacity: .7;
+    transition: 1.5s;
+    
+}
+.single_image .image img:hover{
+    opacity: 1;
+    transform: scale(1.14);
+}
+.single_image .caption{
+    text-align: center;
+}
+.single_image .caption p{
+    font-size: 30px;
+    font-family: 'heli-copta';
+}
+.fa-3x {
+    font-size: 3em;
+    text-align: center;
+    color: violet;
+    
+}
